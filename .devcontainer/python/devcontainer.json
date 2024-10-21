@@ -1,0 +1,22 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-azuretools.vscode-docker",
+        "ms-python.black-formatter",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "dockerComposeFile": "../docker-compose.yml",
+  "name": "python-rabbitmq",
+  "service": "python",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}
