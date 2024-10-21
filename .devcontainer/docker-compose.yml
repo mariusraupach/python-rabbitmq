@@ -1,0 +1,21 @@
+services:
+  python:
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    volumes:
+      - ..:/workspaces/python-rabbitmq
+
+  rabbitmq:
+    env_file:
+      - .env
+    image: rabbitmq:latest
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:
